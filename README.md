@@ -6,7 +6,7 @@
 
 ## Description
 
- This NodeJS project generates a database filled with tables of blogs saved into mySql. I built this project to get familiar with dotenv, the MySQL2 npm package and the sequelize package. I can now use this tool as part of my portfolio of javascript projects.
+ This NodeJS project follows the MVC paradigm and is deployed to Heroku. I built this project to get familiar with Handlebars.js, express-session, the MySQL2 npm package and the sequelize package. I can now use this tool as part of my portfolio of javascript projects.
 
 ## Table of Contents
 
@@ -26,6 +26,7 @@ create .env file with
 DB_NAME=e_commerce_db
 DB_USER=root
 DB_PW=
+secret=
 
 mysql -u root -p
 
