@@ -1,14 +1,14 @@
-async function loginFormHandler(event) {
+async function loginFormHandler (event) {
   event.preventDefault();
 
-  const email = document.querySelector('#email-login').value.trim();
+  const username = document.querySelector('#username-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
 
-  if (email && password) {
+  if (username && password) {
     const response = await fetch('/api/users/login', {
       method: 'post',
       body: JSON.stringify({
-        email,
+        username,
         password
       }),
       headers: { 'Content-Type': 'application/json' }
@@ -22,19 +22,17 @@ async function loginFormHandler(event) {
   }
 }
 
-async function signupFormHandler(event) {
+async function signupFormHandler (event) {
   event.preventDefault();
 
   const username = document.querySelector('#username-signup').value.trim();
-  const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
 
-  if (username && email && password) {
+  if (username && password) {
     const response = await fetch('/api/users', {
       method: 'post',
       body: JSON.stringify({
         username,
-        email,
         password
       }),
       headers: { 'Content-Type': 'application/json' }
@@ -51,3 +49,18 @@ async function signupFormHandler(event) {
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 
 document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+
+function showSignUp (event) {
+  event.preventDefault();
+  document.querySelector('.login-form').style.display = 'none';
+  document.querySelector('.signup-form').style.display = 'block';
+}
+document.querySelector('#signup-a').addEventListener('click', showSignUp);
+
+function showLogin (event) {
+  console.log('test');
+  event.preventDefault();
+  document.querySelector('.signup-form').style.display = 'none';
+  document.querySelector('.login-form').style.display = 'block';
+}
+document.querySelector('#login-a').addEventListener('click', showLogin);
