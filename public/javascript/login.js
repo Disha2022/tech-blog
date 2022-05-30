@@ -58,7 +58,6 @@ function showSignUp (event) {
 document.querySelector('#signup-a').addEventListener('click', showSignUp);
 
 function showLogin (event) {
-  console.log('test');
   event.preventDefault();
   document.querySelector('.signup-form').style.display = 'none';
   document.querySelector('.login-form').style.display = 'block';
