@@ -231,9 +231,24 @@ main {
   margin-top: .5%;
   opacity: .6;
 }
+#new-post-header{
+  background-color: darkblue;
+  color: white;
+  margin: 0;
+  padding: 2%;
+}
+.new-post-form {
+  border-style: solid;
+  border-color: darkblue;
+}
+.new-post-form input, .new-post-form button {
+  width: 96%;
+  margin: 1%;
+}
 
-.new-post-form input {
-  width: 300px;
+.new-post-form input, .new-post-form label {
+  width: 96%;
+  margin: 1%;
 }
 #edit-post h2 {
   background-color: darkblue;
