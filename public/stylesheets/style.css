@@ -67,6 +67,25 @@ form label {
   display: block;
 }
 
+.login-form-wrapper {
+  border-style: solid;
+  border-color: darkblue;
+  padding: 5%;
+}
+
+.login-form input, button {
+width:96%;
+margin: 2% 0;
+padding: 2%;
+}
+
+.login-form h2 {
+  background-color:darkblue;
+  color: white ;
+  padding: 1.5% 2.5%;
+  margin:0;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -192,7 +211,7 @@ main {
   padding:3%;
 }
 
-.comment-form label, button, textarea {
+.comment-form label, .comment-form button, .comment-form textarea {
   width:96%;
   margin: .5% 2%;
 }

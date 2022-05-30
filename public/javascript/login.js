@@ -46,20 +46,20 @@ async function signupFormHandler (event) {
   }
 }
 
-document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+document.querySelector('#login-form').addEventListener('submit', loginFormHandler);
 
-document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+document.querySelector('#signup-form').addEventListener('submit', signupFormHandler);
 
 function showSignUp (event) {
   event.preventDefault();
-  document.querySelector('.login-form').style.display = 'none';
-  document.querySelector('.signup-form').style.display = 'block';
+  document.querySelector('#login-form').style.display = 'none';
+  document.querySelector('#signup-form').style.display = 'block';
 }
 document.querySelector('#signup-a').addEventListener('click', showSignUp);
 
 function showLogin (event) {
   event.preventDefault();
-  document.querySelector('.signup-form').style.display = 'none';
-  document.querySelector('.login-form').style.display = 'block';
+  document.querySelector('#signup-form').style.display = 'none';
+  document.querySelector('#login-form').style.display = 'block';
 }
 document.querySelector('#login-a').addEventListener('click', showLogin);
