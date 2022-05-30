@@ -21,7 +21,15 @@ router.post('/', withAuth, (req, res) => {
     .then(dbCommentData => res.json(dbCommentData))
     .catch(err => {
       console.log(err);
-      res.status(400).json(err);
+      if (req.session.loggedIn) {
+        req.session.destroy(() => {
+          alert('Please login');
+          res.status(204).json(err);
+        });
+      } else {
+        alert('Please login');
+        res.status(404).json(err);
+      }
     });
 });
 
@@ -40,7 +48,15 @@ router.delete('/:id', withAuth, (req, res) => {
     })
     .catch(err => {
       console.log(err);
-      res.status(500).json(err);
+      if (req.session.loggedIn) {
+        req.session.destroy(() => {
+          alert('Please login');
+          res.status(204).json(err);
+        });
+      } else {
+        alert('Please login');
+        res.status(404).json(err);
+      }
     });
 });
 
