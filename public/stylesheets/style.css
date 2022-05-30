@@ -235,9 +235,28 @@ main {
 .new-post-form input {
   width: 300px;
 }
-
+#edit-post h2 {
+  background-color: darkblue;
+  color: white;
+  padding: 2.5%;
+  margin: 0;
+}
 .edit-post-form {
-  margin-bottom: 5%;
+  border-style: solid;
+  border-color: darkblue;
+  padding:2%;
+  margin: 0%;
+}
+
+.edit-post-form input, .edit-post-form button, .edit-post-form label{
+  padding:1%;
+  width: 100%;
+}
+
+.edit-post-form input, .edit-post-form button {
+  padding:2% 1.5%;
+  width: 100%;
+  margin-bottom: 0;
 }
 
 footer {
