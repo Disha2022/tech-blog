@@ -128,12 +128,16 @@ main {
 }
 
 .post .title a {
+  font-size: larger;
   color: white;
   margin-left: 2%;
+  padding: 1%;
 }
 
 .post .title .meta {
+  font-size: small;
   margin-right: 2%;
+  padding: 1%;
 }
 .post p {
   margin: 2%;
