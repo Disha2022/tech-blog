@@ -6,7 +6,7 @@
 
 ## Description
 
- This NodeJS project follows the MVC paradigm and is deployed to Heroku. I built this project to get familiar with Handlebars.js, express-session, the MySQL2 npm package and the sequelize package. I can now use this tool as part of my portfolio of javascript projects.
+ This NodeJS project follows the MVC paradigm and is deployed to Heroku. I built this project to get familiar with Handlebars.js, user authentication and authorization, express-session, the MySQL2 npm package and the sequelize package. I can now use this tool as part of my portfolio of javascript projects. https://disha-tech-blog.herokuapp.com/
 
 ## Table of Contents
 
@@ -36,9 +36,9 @@ source db/schema.sql
 
 npm start
 
-## Demo
+## Demo Screenshot
 
-TODO
+![screenshot](./demo.png)
 
 ## Contributing Guidelines
 
