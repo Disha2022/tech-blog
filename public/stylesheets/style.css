@@ -108,6 +108,14 @@ main {
   padding: 2% 4%;
 }
 
+#dashboard li{
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  width: 70%;
+  border-style: solid;
+}
+
 .delete-post-btn {
   background-color: #d41414;
 }
@@ -143,10 +151,6 @@ main {
 }
 .post p {
   margin: 2%;
-}
-.edit-content {
-  display: block;
-  margin: -1.5% 0 2% 0;
 }
 
 .comment-form {
