@@ -120,14 +120,24 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  border-style: solid;
 }
 
-.post .title span {
-  font-style: italic;
-  font-size: 90%;
-  color: #7d7d7d;
+.post .title {
+  display: flex;
+  justify-content: space-between;
 }
 
+.post .title a {
+  margin-left: 2%;
+}
+
+.post .title .meta {
+  margin-right: 2%;
+}
+.post p {
+  margin: 2%;
+}
 .edit-content {
   display: block;
   margin: -1.5% 0 2% 0;
