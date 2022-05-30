@@ -158,6 +158,9 @@ main {
   margin-left: 2%;
   padding: 1%;
 }
+.post .title a:hover {
+  color: #3486eb;
+}
 
 .post .title .meta {
   font-size: small;
@@ -168,12 +171,34 @@ main {
   margin: 2%;
 }
 
+.comments h3 {
+  color:white;
+  background-color: darkblue;
+  margin:0;
+  padding:2%;
+}
+#comments-border {
+  border-style: solid;
+  border-color: darkblue;
+}
 .comment-form {
-  margin-bottom: 5%;
+  border-style: solid;
+  border-color: darkblue;
+  margin-top: 5%;
+}
+.comment-form #style-div {
+  background-color: darkblue;
+  margin:0;
+  padding:3%;
+}
+
+.comment-form label, button, textarea {
+  width:96%;
+  margin: .5% 2%;
 }
 
 .comment {
-  padding: 1%;
+  padding: 2%;
   margin-bottom: 1%;
 }
 
@@ -183,7 +208,7 @@ main {
 
 .comment .meta {
   font-size: 90%;
-  margin-bottom: .5%;
+  margin-top: .5%;
   opacity: .6;
 }
 
