@@ -1,17 +1,17 @@
+<section id="dashboard"></section>
 {{#if posts.length}}
-<section id="dashboard">
-  <ul>
-    {{#each posts as |post|}}
-    <li>
-      <a href="/dashboard/edit/{{post.id}}" class="edit-content">{{post.title}}</a>
-      <div class="meta">
-        {{format_date created_at}}
-      </div>
-    </li>
-    {{/each}}
-  </ul>
-  <div id="create-post-wrapper">
-    <a id="create-post" href="/add-post">+ New Post</a>
-  </div>
-</section>
+<ul>
+  {{#each posts as |post|}}
+  <li>
+    <a href="/dashboard/edit/{{post.id}}" class="edit-content">{{post.title}}</a>
+    <div class="meta">
+      {{format_date created_at}}
+    </div>
+  </li>
+  {{/each}}
+</ul>
 {{/if}}
+<div id="create-post-wrapper">
+  <a id="create-post" href="/add-post">+ New Post</a>
+</div>
+</section>
